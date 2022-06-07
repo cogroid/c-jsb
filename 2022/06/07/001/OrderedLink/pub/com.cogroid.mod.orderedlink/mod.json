@@ -1,0 +1,7 @@
+{
+  "code": "com.cogroid.mod.orderedlink",
+  "name": "OrderedLink Sample",
+  "jars": [
+    "OrderedLink.jar"
+  ]
+}
