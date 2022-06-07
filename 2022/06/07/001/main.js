@@ -7,6 +7,10 @@ function __exec__(data) {
 	
 	as().downloadFile('https://github.com/cogroid/c-jsb/raw/main/2022/06/07/001/OrderedLink.scm', '/OrderedLink.scm');
 	execSCM('/OrderedLink.scm', data.input());  
+	
+	as().downloadFile('https://github.com/cogroid/c-jsb/raw/main/2022/06/07/001/OrderedLink/pub/com.cogroid.mod.orderedlink.zip', '/cached-mod.zip');
+	mch().install('/cached-mod.zip');
+ 	mod('com.cogroid.mod.orderedlink').pkg('ol').test();
 }
 
 function execSCM(scmFile, inputMap) {
